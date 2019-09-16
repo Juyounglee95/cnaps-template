@@ -8,6 +8,7 @@
   	<module>cnaps-shared</module>
   	<module>cnaps-users</module>
   	<module>cnaps-menu</module>
+  	<module>cnaps-role</module>
   </modules>
   <parent>
         <groupId>org.springframework.boot</groupId>
