@@ -47,7 +47,7 @@ public class UsersController implements UsersService{
 			return null;
 		}
 	}
-	@DeleteMapping("/userservice/deluser/{userId}")
+	@DeleteMapping("/userservice/deleteuser/{userId}")
 	public void deleteUser(Long userId) {
 		Users user = usersRepository.findOne(userId);
 		if(user!=null) {

@@ -1,4 +1,4 @@
-package com.skcc.cnaps.menu.context.domain.menu.model;
+package com.skcc.cnaps.menu.context.domain.menugroup.model;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -10,14 +10,14 @@ import com.querydsl.core.types.Path;
 
 
 /**
- * QMenu is a Querydsl query type for Menu
+ * QMenuGroup is a Querydsl query type for MenuGroup
  */
 @Generated("com.querydsl.codegen.EntitySerializer")
-public class QMenu extends EntityPathBase<Menu> {
+public class QMenuGroup extends EntityPathBase<MenuGroup> {
 
-    private static final long serialVersionUID = 1526921785L;
+    private static final long serialVersionUID = 1658300403L;
 
-    public static final QMenu menu = new QMenu("menu");
+    public static final QMenuGroup menuGroup = new QMenuGroup("menuGroup");
 
     public final com.skcc.cnaps.shared.share.base.domain.QAbstractEntity _super = new com.skcc.cnaps.shared.share.base.domain.QAbstractEntity(this);
 
@@ -27,25 +27,23 @@ public class QMenu extends EntityPathBase<Menu> {
     //inherited
     public final NumberPath<Long> id = _super.id;
 
-    public final NumberPath<Long> menuGroupId = createNumber("menuGroupId", Long.class);
+    public final StringPath menuGroupName = createString("menuGroupName");
 
-    public final StringPath menuName = createString("menuName");
-
-    public final BooleanPath menuUsage = createBoolean("menuUsage");
+    public final BooleanPath menuGroupUsage = createBoolean("menuGroupUsage");
 
     //inherited
     public final DateTimePath<java.time.LocalDateTime> modifiedDate = _super.modifiedDate;
 
-    public QMenu(String variable) {
-        super(Menu.class, forVariable(variable));
+    public QMenuGroup(String variable) {
+        super(MenuGroup.class, forVariable(variable));
     }
 
-    public QMenu(Path<? extends Menu> path) {
+    public QMenuGroup(Path<? extends MenuGroup> path) {
         super(path.getType(), path.getMetadata());
     }
 
-    public QMenu(PathMetadata metadata) {
-        super(Menu.class, metadata);
+    public QMenuGroup(PathMetadata metadata) {
+        super(MenuGroup.class, metadata);
     }
 
 }

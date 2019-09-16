@@ -12,7 +12,7 @@ import com.skcc.cnaps.menu.context.domain.menu.model.Menu;
 public interface MenuRepository extends PagingAndSortingRepository<Menu, Long>, QueryDslPredicateExecutor<Menu>{
 	List<Menu> findByMenuNameLike(String menuName);
 	List<Menu> findByMenuGroupId(Long menuGroupId);
-	List<Menu> findByUsage(Boolean usage);
+	List<Menu> findByMenuUsage(Boolean menuUsage);
 	Menu findByMenuName(String menuName);
 	
 }

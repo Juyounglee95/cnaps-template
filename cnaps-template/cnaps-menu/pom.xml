@@ -5,11 +5,16 @@
     <artifactId>cnaps-template</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
+  
+  
   <artifactId>cnaps-menu</artifactId>
-   <dependencies>
+  
+  <dependencies>
   	<dependency>
   		<groupId>com.skcc</groupId>
   		<artifactId>cnaps-shared</artifactId>
+  		<type>jar</type>
   	</dependency>
   </dependencies>
+   
 </project>

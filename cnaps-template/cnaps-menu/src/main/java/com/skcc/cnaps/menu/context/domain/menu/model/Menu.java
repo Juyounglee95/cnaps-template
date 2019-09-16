@@ -17,7 +17,7 @@ public class Menu extends AbstractEntity implements AggregateRoot{
 	
 	private Long menuGroupId;
 	
-	private Boolean usage = false;
+	private Boolean menuUsage = false;
 	
 	public Menu(String menuName) {
 		this.menuName = menuName;
